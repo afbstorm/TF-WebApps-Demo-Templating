@@ -1,0 +1,10 @@
+<%- include('header.ejs') %>
+
+<h2>Liste des cours des WebApps</h2>
+<ul>
+    <% courses.forEach(course => { %>
+        <li><%= course.id %> - <%= course.name %></li>
+    <% }) %>
+</ul>
+
+<%- include('footer.ejs') %>
